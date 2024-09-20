@@ -73,7 +73,6 @@ void differenzaTraPeriodi(Tempo t1, Tempo t2, Tempo *diff) {
     //assoluto, ovvero, una differenza negativa sarà positiva
     int differenzaInSecondi = abs(secondiTotali1 - secondiTotali2);
 
-    // differenza in ore, minuti e secondi
     diff->ore = differenzaInSecondi / 3600;
     differenzaInSecondi %= 3600;
     diff->minuti = differenzaInSecondi / 60;
