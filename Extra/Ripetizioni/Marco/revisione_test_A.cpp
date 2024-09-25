@@ -137,3 +137,40 @@ void ordinamentoLento(int v[]) {
         }
     }
 }
+
+// Stampa diagonale matrice
+void stampaDiagonale(int m[][N]) {
+    for(int i = 0; i < N; i++) {
+        printf("%d ", m[i][i]);
+    }
+    printf("\n");
+}
+
+// Stampa diagonale inversa matrice
+void stampaDiagonaleInversa(int m[][N]) {
+    for(int i = 0; i < N; i++) {
+        printf("%d ", m[i][N - i - 1]);
+    }
+    printf("\n");
+}
+
+// Ricerca dicotomica
+int ricercaDicotomica(int v[], int x) {
+    int min = 0, max = N-1, half;
+
+    while(min <= max) {
+        half = (min + max) / 2;
+
+        if(v[half] == x) return 1;
+        if(x < v[half]) max = half - 1;
+        else min = half + 1; 
+    }
+
+    return 0;
+}
+
+void scambia(int *a, int *b) {
+    int temp = *a; 
+    *a = *b;        
+    *b = temp;    
+}
