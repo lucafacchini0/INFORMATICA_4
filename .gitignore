@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+*.[!a-zA-Z0-9] 
+
+
 # Object files
 *.o
 *.ko
