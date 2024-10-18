@@ -30,3 +30,6 @@ int numero = 0;
 if(carattere = 'a') {
     numero = 1;
 }
+
+
+//
