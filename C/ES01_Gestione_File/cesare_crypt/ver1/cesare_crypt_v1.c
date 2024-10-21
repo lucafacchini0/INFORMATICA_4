@@ -76,5 +76,5 @@ void cesareDecrypt(const char *nomeFileInput, const char *outputFileName, int ch
 
     fclose(inputFile);
     fclose(outputFile);
-    printf("File decriptato in %s\n", outputFileName);
+    printf("File decriptato in %s\n", outputFileName); // Output file
 }
