@@ -1,3 +1,3 @@
-[2024-10-25 18:05:50] Applicazione avviata.
-[2024-10-25 18:05:50] Connessione al database effettuata.
-[2024-10-25 18:05:50] Errore: impossibile connettersi al server.
+[2024-10-25 18:16:41] Applicazione avviata.
+[2024-10-25 18:16:41] Connessione al database BilardoSQL effettuata.
+[2024-10-25 18:16:41] Errore:: impossibile connettersi al server di FBLabs.

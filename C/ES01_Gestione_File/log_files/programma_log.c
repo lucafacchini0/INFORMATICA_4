@@ -13,7 +13,7 @@ int main() {
 
     scriviLog("Applicazione avviata.");
     scriviLog("Connessione al database BilardoSQL effettuata.");
-    scriviLog("Errore:: impossibile connettersi al server di FBLabs.");
+    scriviLog("Errore: impossibile connettersi al server di FBLabs.");
 
     chiudiFileDiLog();
 
