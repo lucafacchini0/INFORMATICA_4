@@ -1,0 +1,3 @@
+[2024-10-25 18:05:50] Applicazione avviata.
+[2024-10-25 18:05:50] Connessione al database effettuata.
+[2024-10-25 18:05:50] Errore: impossibile connettersi al server.
