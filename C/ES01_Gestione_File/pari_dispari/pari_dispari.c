@@ -45,6 +45,8 @@ int main() {
     // Metodo 2: usare fgetc() e fputs()
     char c;
     int inNumero = 0;  // Flag per tenere traccia se siamo in un numero
+    
+    numero = 0;
 
     while ((c = fgetc(fileInput)) != EOF) {
         if (c == ' ' || c == '\n') { // Se il numero è terminato
