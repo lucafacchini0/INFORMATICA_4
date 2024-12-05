@@ -15,7 +15,7 @@ class Rettangolo {
         void setAltezza(double x) { altezza = x; }
         double getBase() { return base; }
         double getAltezza() { return altezza; }
-        double getPerimetro() { return (base * 2) + (altezza *2 ); }
+        double getPerimetro() { return (base * 2) + (altezza * 2); }
         double getArea() { return base * altezza; }
         
         void stampa() {
@@ -24,7 +24,7 @@ class Rettangolo {
             std::cout << "Perimetro:" << getPerimetro() << std::endl;
             std::cout << "Area:" << getArea() << std::endl;
         }
-        
+
     private:
         double base;
         double altezza;
