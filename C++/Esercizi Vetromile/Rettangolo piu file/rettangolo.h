@@ -10,6 +10,7 @@ class Rettangolo {
         // Metodi di calcolo
         double calcoloPerimetro();
         double calcoloArea();
+        double calcolaDiagonale();
 
     public:
         // Costruttori
@@ -30,6 +31,7 @@ class Rettangolo {
         double getAltezza();
         double getPerimetro();
         double getArea();
+        double getDiagonale();
 
         // Generali
         void stampa();

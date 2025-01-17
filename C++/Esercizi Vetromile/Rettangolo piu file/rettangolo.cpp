@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "rettangolo.h"
 
 Rettangolo::Rettangolo() 
@@ -17,6 +18,7 @@ Rettangolo::~Rettangolo() {
 // Metodi di calcolo
 double Rettangolo::calcoloPerimetro() { return (base * 2) + (altezza * 2); }
 double Rettangolo::calcoloArea() { return base * altezza; }
+double Rettangolo::calcolaDiagonale() { return sqrt(base*base + altezza*altezza); }
 
 // Setters
 void Rettangolo::setBase(double x) { base = x; }
@@ -27,6 +29,7 @@ double Rettangolo::getBase() { return base; }
 double Rettangolo::getAltezza() { return altezza; }
 double Rettangolo::getPerimetro() { return Rettangolo::calcoloPerimetro(); }
 double Rettangolo::getArea() { return Rettangolo::calcoloArea(); }
+double Rettangolo::getDiagonale() { return calcolaDiagonale(); }
 
 // Generali
 void Rettangolo::stampa() {
@@ -34,6 +37,6 @@ void Rettangolo::stampa() {
     std::cout << "Altezza:" << getAltezza() << std::endl;
     std::cout << "Perimetro:" << getPerimetro() << std::endl;
     std::cout << "Area:" << getArea() << std::endl;
+    std::cout << "Diagonale: " << getDiagonale() << std::endl;
     std::cout << std::endl;
-
 }
