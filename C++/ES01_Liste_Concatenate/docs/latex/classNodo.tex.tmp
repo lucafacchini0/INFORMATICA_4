@@ -1,0 +1,55 @@
+\doxysection{Nodo Class Reference}
+\hypertarget{classNodo}{}\label{classNodo}\index{Nodo@{Nodo}}
+
+
+Rappresenta un nodo di una lista concatenata.  
+
+
+
+
+{\ttfamily \#include $<$lista.\+h$>$}
+
+
+
+Collaboration diagram for Nodo\+:
+% FIG 0
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classNodo_ae36078465517f737c5e4c19e2be221d9}{valore}}
+\begin{DoxyCompactList}\small\item\em Valore intero contenuto nel nodo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classNodo}{Nodo}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classNodo_acf0b0c70cfd77b49c9ddb5efb6e835c3}{next}}
+\begin{DoxyCompactList}\small\item\em Puntatore al nodo successivo nella lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rappresenta un nodo di una lista concatenata. 
+
+La classe \doxylink{classNodo}{Nodo} è una struttura di base per costruire una lista concatenata. Ogni nodo contiene un valore intero e un puntatore al nodo successivo, che consente di navigare attraverso la lista. Se il nodo è l\textquotesingle{}ultimo della lista, il puntatore al successivo sarà nullptr. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classNodo_acf0b0c70cfd77b49c9ddb5efb6e835c3}\label{classNodo_acf0b0c70cfd77b49c9ddb5efb6e835c3} 
+\index{Nodo@{Nodo}!next@{next}}
+\index{next@{next}!Nodo@{Nodo}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classNodo}{Nodo}}\texorpdfstring{$\ast$}{*} Nodo\+::next}
+
+
+
+Puntatore al nodo successivo nella lista. 
+
+Questo puntatore permette di collegare il nodo al nodo successivo nella lista concatenata. Se il nodo è l\textquotesingle{}ultimo della lista, il puntatore sarà nullptr. \Hypertarget{classNodo_ae36078465517f737c5e4c19e2be221d9}\label{classNodo_ae36078465517f737c5e4c19e2be221d9} 
+\index{Nodo@{Nodo}!valore@{valore}}
+\index{valore@{valore}!Nodo@{Nodo}}
+\doxysubsubsection{\texorpdfstring{valore}{valore}}
+{\footnotesize\ttfamily int Nodo\+::valore}
+
+
+
+Valore intero contenuto nel nodo. 
+
+Questo campo memorizza il dato associato al nodo della lista. Può essere utilizzato per memorizzare qualsiasi valore numerico intero desiderato. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lista_8h}{lista.\+h}}\end{DoxyCompactItemize}

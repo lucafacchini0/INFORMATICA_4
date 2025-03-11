@@ -1,0 +1,177 @@
+\doxysection{Lista Class Reference}
+\hypertarget{classLista}{}\label{classLista}\index{Lista@{Lista}}
+
+
+Implementazione di una lista concatenata.  
+
+
+
+
+{\ttfamily \#include $<$lista.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLista_a1f668b36909182ef1360b48503529a31}{Lista}} ()
+\begin{DoxyCompactList}\small\item\em Costruttore della classe \doxylink{classLista}{Lista}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLista_a55445565c8687c845dbd5688894fffdd}{inserisci\+In\+Testa}} (int val)
+\begin{DoxyCompactList}\small\item\em Inserisce un nodo con valore in testa alla lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLista_a5e58ca487becd99a4de151d3bc6bc086}{inserisci\+In\+Coda}} (int val)
+\begin{DoxyCompactList}\small\item\em Inserisce un nodo con valore in coda alla lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLista_a2fc2db69f3d10bc585033de385beaf0a}{elimina}} (int val)
+\begin{DoxyCompactList}\small\item\em Elimina il nodo con un valore specifico dalla lista. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLista_a6745461d497801fbfc9aa1a66a283ead}{ricerca}} (int val)
+\begin{DoxyCompactList}\small\item\em Ricerca un nodo con un valore specifico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLista_a56a5115dbe1a6971e2e3e4565946a487}{visualizza}} ()
+\begin{DoxyCompactList}\small\item\em Visualizza tutti i nodi della lista. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLista_a92b3e9099dd665b5c45c8177320cd292}{conta\+Nodi}} ()
+\begin{DoxyCompactList}\small\item\em Conta il numero di nodi nella lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLista_a4cd06f5e0bb2eca2f1ab99389b41a094}{rimuovi\+Duplicati}} ()
+\begin{DoxyCompactList}\small\item\em Rimuove i duplicati dalla lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLista_a4d7394b2728a00ad8404965b2e15d096}{\texorpdfstring{$\sim$}{\string~}\+Lista}} ()
+\begin{DoxyCompactList}\small\item\em Distruttore della classe \doxylink{classLista}{Lista}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementazione di una lista concatenata. 
+
+La classe \doxylink{classLista}{Lista} fornisce operazioni per manipolare una lista concatenata singola. È possibile inserire nodi in testa o in coda, eliminare nodi, cercare un valore, visualizzare la lista, contare il numero di nodi e rimuovere i duplicati. La lista può contenere valori interi. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLista_a1f668b36909182ef1360b48503529a31}\label{classLista_a1f668b36909182ef1360b48503529a31} 
+\index{Lista@{Lista}!Lista@{Lista}}
+\index{Lista@{Lista}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{Lista()}{Lista()}}
+{\footnotesize\ttfamily Lista\+::\+Lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Costruttore della classe \doxylink{classLista}{Lista}. 
+
+Il costruttore inizializza il puntatore head a nullptr, indicando che la lista è inizialmente vuota. \Hypertarget{classLista_a4d7394b2728a00ad8404965b2e15d096}\label{classLista_a4d7394b2728a00ad8404965b2e15d096} 
+\index{Lista@{Lista}!````~Lista@{\texorpdfstring{$\sim$}{\string~}Lista}}
+\index{````~Lista@{\texorpdfstring{$\sim$}{\string~}Lista}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Lista()}{\string~Lista()}}
+{\footnotesize\ttfamily Lista\+::\texorpdfstring{$\sim$}{\string~}\+Lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Distruttore della classe \doxylink{classLista}{Lista}. 
+
+Il distruttore dealloca tutta la memoria utilizzata dai nodi della lista concatenata, liberando le risorse. Viene invocato automaticamente quando l\textquotesingle{}oggetto \doxylink{classLista}{Lista} esce dallo scope. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLista_a92b3e9099dd665b5c45c8177320cd292}\label{classLista_a92b3e9099dd665b5c45c8177320cd292} 
+\index{Lista@{Lista}!contaNodi@{contaNodi}}
+\index{contaNodi@{contaNodi}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{contaNodi()}{contaNodi()}}
+{\footnotesize\ttfamily int Lista\+::conta\+Nodi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Conta il numero di nodi nella lista. 
+
+Questa funzione restituisce il numero di nodi presenti nella lista concatenata.
+
+\begin{DoxyReturn}{Returns}
+int Il numero di nodi presenti nella lista. 
+\end{DoxyReturn}
+\Hypertarget{classLista_a2fc2db69f3d10bc585033de385beaf0a}\label{classLista_a2fc2db69f3d10bc585033de385beaf0a} 
+\index{Lista@{Lista}!elimina@{elimina}}
+\index{elimina@{elimina}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{elimina()}{elimina()}}
+{\footnotesize\ttfamily void Lista\+::elimina (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Elimina il nodo con un valore specifico dalla lista. 
+
+Questa funzione cerca e rimuove il primo nodo che contiene il valore specificato. Se il valore non è presente nella lista, la lista rimane invariata.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Il valore intero del nodo da eliminare. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLista_a5e58ca487becd99a4de151d3bc6bc086}\label{classLista_a5e58ca487becd99a4de151d3bc6bc086} 
+\index{Lista@{Lista}!inserisciInCoda@{inserisciInCoda}}
+\index{inserisciInCoda@{inserisciInCoda}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{inserisciInCoda()}{inserisciInCoda()}}
+{\footnotesize\ttfamily void Lista\+::inserisci\+In\+Coda (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Inserisce un nodo con valore in coda alla lista. 
+
+Questa funzione crea un nuovo nodo con il valore passato come parametro e lo inserisce alla fine della lista. Se la lista è vuota, il nuovo nodo diventa la testa della lista.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Il valore intero da inserire nel nuovo nodo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLista_a55445565c8687c845dbd5688894fffdd}\label{classLista_a55445565c8687c845dbd5688894fffdd} 
+\index{Lista@{Lista}!inserisciInTesta@{inserisciInTesta}}
+\index{inserisciInTesta@{inserisciInTesta}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{inserisciInTesta()}{inserisciInTesta()}}
+{\footnotesize\ttfamily void Lista\+::inserisci\+In\+Testa (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Inserisce un nodo con valore in testa alla lista. 
+
+Questa funzione crea un nuovo nodo con il valore passato come parametro e lo inserisce all\textquotesingle{}inizio della lista. Gli altri nodi vengono spostati di una posizione verso destra.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Il valore intero da inserire nel nuovo nodo. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classLista_a6745461d497801fbfc9aa1a66a283ead}\label{classLista_a6745461d497801fbfc9aa1a66a283ead} 
+\index{Lista@{Lista}!ricerca@{ricerca}}
+\index{ricerca@{ricerca}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{ricerca()}{ricerca()}}
+{\footnotesize\ttfamily bool Lista\+::ricerca (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Ricerca un nodo con un valore specifico. 
+
+Questa funzione verifica se un nodo con il valore specificato è presente nella lista.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Il valore intero da cercare nella lista. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Se il valore è presente nella lista. 
+
+false Se il valore non è presente nella lista. 
+\end{DoxyReturn}
+\Hypertarget{classLista_a4cd06f5e0bb2eca2f1ab99389b41a094}\label{classLista_a4cd06f5e0bb2eca2f1ab99389b41a094} 
+\index{Lista@{Lista}!rimuoviDuplicati@{rimuoviDuplicati}}
+\index{rimuoviDuplicati@{rimuoviDuplicati}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{rimuoviDuplicati()}{rimuoviDuplicati()}}
+{\footnotesize\ttfamily void Lista\+::rimuovi\+Duplicati (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rimuove i duplicati dalla lista. 
+
+Questa funzione rimuove i nodi con valori duplicati dalla lista. Utilizza una struttura dati come unordered\+\_\+set per tracciare i valori già incontrati e rimuovere quelli ripetuti. \Hypertarget{classLista_a56a5115dbe1a6971e2e3e4565946a487}\label{classLista_a56a5115dbe1a6971e2e3e4565946a487} 
+\index{Lista@{Lista}!visualizza@{visualizza}}
+\index{visualizza@{visualizza}!Lista@{Lista}}
+\doxysubsubsection{\texorpdfstring{visualizza()}{visualizza()}}
+{\footnotesize\ttfamily void Lista\+::visualizza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Visualizza tutti i nodi della lista. 
+
+Questa funzione stampa i valori di tutti i nodi nella lista, partendo dalla testa e proseguendo fino all\textquotesingle{}ultimo nodo. I valori vengono separati da uno spazio. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{lista_8h}{lista.\+h}}\item 
+lista.\+cpp\end{DoxyCompactItemize}
