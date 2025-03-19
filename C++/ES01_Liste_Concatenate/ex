@@ -1,0 +1,103 @@
+#include "lista.h"
+
+Lista::Lista() {
+    this->head = nullptr;
+}
+
+void Lista::inserisciInTesta(int val) {
+    Nodo* nuovoNodo = new Nodo;
+    nuovoNodo->valore = val;
+    nuovoNodo->next = head;
+    head = nuovoNodo;
+}
+
+void Lista::inserisciInCoda(int val) {
+    Nodo* nuovoNodo = new Nodo;
+    nuovoNodo->valore = val;
+    if (head == nullptr) {
+        head = nuovoNodo;
+        return;
+    }
+    Nodo* temp = head;
+    while (temp->next != nullptr) {
+        temp = temp->next;
+    }
+    temp->next = nuovoNodo;
+}
+
+void Lista::elimina(int val) {
+    if (head == nullptr) return;
+    if (head->valore == val) {
+        head = head->next;
+        return;
+    }
+    Nodo* temp = head;
+    while (temp->next != nullptr && temp->next->valore != val) {
+        temp = temp->next;
+    }
+    if (temp->next == nullptr) return;
+    Nodo* daEliminare = temp->next;
+    temp->next = temp->next->next;
+    delete daEliminare;
+}
+
+bool Lista::ricerca(int val) {
+    Nodo* temp = head;
+    while (temp != nullptr) {
+        if (temp->valore == val) {
+            return true;
+        }
+        temp = temp->next;
+    }
+    return false;
+}
+
+void Lista::visualizza() {
+    Nodo* temp = head;
+    if (temp == nullptr) {
+        std::cout << "Lista vuota!" << std::endl;
+        return;
+    }
+    while (temp != nullptr) {
+        std::cout << temp->valore << "\t";
+        temp = temp->next;
+    }
+    std::cout << std::endl;
+}
+
+int Lista::contaNodi() {
+    int count = 0;
+    Nodo* temp = head;
+    while (temp != nullptr) {
+        count++;
+        temp = temp->next;
+    }
+    return count;
+}
+
+void Lista::rimuoviDuplicati() {
+    if (head == nullptr) return;
+    Nodo* temp = head;
+    while (temp != nullptr) {
+        Nodo* temp2 = temp;
+        while (temp2->next != nullptr) {
+            if (temp->valore == temp2->next->valore) {
+                Nodo* daEliminare = temp2->next;
+                temp2->next = temp2->next->next;
+                delete daEliminare;
+            } else {
+                temp2 = temp2->next;
+            }
+        }
+        temp = temp->next;
+    }
+}
+
+Lista::~Lista() {
+    Nodo* temp = head;
+    while (temp != nullptr) {
+        Nodo* daEliminare = temp;
+        temp = temp->next;
+        delete daEliminare;
+    }
+}
