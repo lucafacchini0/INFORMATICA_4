@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangolo di Tartaglia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔺 Triangolo di Tartaglia</h1>
+        
+        <div class="info">
+            <strong>Il Triangolo di Tartaglia (Pascal)</strong><br>
+            Ogni numero è la somma dei due numeri sopra di esso. I coefficienti rappresentano 
+            lo sviluppo di (a+b)ⁿ e hanno numerose applicazioni in matematica e probabilità.
+        </div>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="righe">Numero di righe del triangolo:</label>
+                <input type="number" id="righe" min="1" max="20" value="10">
+                <button onclick="generaTriangolo()">Genera Triangolo</button>
+            </div>
+            
+            <div class="examples">
+                <span>Esempi rapidi:</span>
+                <button class="example-btn" onclick="setRighe(5)">5 righe</button>
+                <button class="example-btn" onclick="setRighe(10)">10 righe</button>
+                <button class="example-btn" onclick="setRighe(15)">15 righe</button>
+            </div>
+        </div>
+        
+        <div class="output">
+            <div id="triangolo">Inserisci il numero di righe e clicca "Genera Triangolo"</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
