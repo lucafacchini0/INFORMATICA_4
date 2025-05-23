@@ -1,0 +1,1 @@
+Per generare il front-end di entrambe le pagine è stato usato CLAUDE SONNET 4.

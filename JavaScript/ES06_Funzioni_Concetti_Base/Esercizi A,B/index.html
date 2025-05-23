@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcolatrice e Inverti Cifre</title>
+</head>
+<body>
+    <div class="container">
+        <h1>🧮 Calcolatrice mega iper-spaziale di Facchini</h1>
+        
+        <div class="input-group">
+            <label for="num1">Primo numero:</label>
+            <input type="number" id="num1" step="any">
+        </div>
+        
+        <div class="input-group">
+            <label for="operazione">Operazione:</label>
+            <select id="operazione">
+                <option value="">Seleziona un'operazione</option>
+                <option value="+">+ (Addizione)</option>
+                <option value="-">- (Sottrazione)</option>
+                <option value="*">* (Moltiplicazione)</option>
+                <option value="/">/ (Divisione)</option>
+                <option value="**">** (Potenza)</option>
+            </select>
+        </div>
+        
+        <div class="input-group">
+            <label for="num2">Secondo numero:</label>
+            <input type="number" id="num2" step="any">
+        </div>
+        
+        <button onclick="calcolatrice()">Calcola</button>
+        
+        <div id="risultato-calc" class="result hidden"></div>
+    </div>
+
+    <div class="container">
+        <h2>🔄 Inverti Cifre</h2>
+        
+        <div class="input-group">
+            <label for="numero">Inserisci un numero intero:</label>
+            <input type="number" id="numero" step="1">
+        </div>
+        
+        <button onclick="testInvertiCifre()">Inverti Cifre</button>
+        
+        <div id="risultato-inverti" class="result hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
